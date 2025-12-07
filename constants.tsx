@@ -19,11 +19,12 @@ import {
 
 export const PERSONAL_INFO = {
   name: "Ahmed Hazem",
-  title: "Back-End Developer (.NET)",
-  location: "Cairo, Egypt",
-  phone: "01068298970",
-  email: "div.ahmedhazam@gmail.com",
+  title: "Backend Developer",
+  location: "Sohag, Egypt",
+  phone: "+20-1068298970",
+  email: "mailto:div.ahmedhazam@gmail.com",
   profilePic: "https://github.com/AhmedHazem02.png",
+  summary: "Backend Developer specializing in .NET technologies and scalable architecture. Delivered production-ready platforms, including high-traffic e-commerce engines and digital medical systems. Optimized MSSQL database performance by 30% and integrated secure payment gateways. Committed to writing clean, testable code and driving technical solutions in Agile environments.",
   socials: {
     github: "https://github.com/AhmedHazem02",
     linkedin: "https://www.linkedin.com/in/ahmed-hazem-84912722a/",
@@ -36,15 +37,138 @@ export const PERSONAL_INFO = {
 
 export const WORK_EXPERIENCE: Experience[] = [
   {
-    role: "Back-End Developer",
+    role: "Backend Developer",
     company: "Xfuse",
-    period: "September 24, 2025 - Present",
+    period: "Sep 2025 – Present",
     description: [
-      "Developing scalable backend services and APIs.",
-      "Contributing to system architecture and database design.",
-      "Collaborating with the team to deliver high-quality software solutions."
+      "Design and develop scalable backend services and APIs for production-level applications.",
+      "Lead the backend architecture for key company products including e-commerce and medical platforms.",
+      "Optimize database schema and queries in MSSQL to enhance system performance and reduce latency.",
+      "Apply Clean Architecture principles and Design Patterns to ensure code maintainability."
     ],
     type: "Work"
+  }
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "MakaStore – Production-Ready E-Commerce",
+    period: "Oct 2025 – Nov 2025",
+    description: "Architected the entire backend and transaction engine for an Arabic-first (RTL) e-commerce platform. Constructed a custom Order Engine to validate and manage the full order lifecycle and inventory updates. Developed a complete Payment System from scratch, handling transaction generation, webhook verification, and edge cases. Established secure admin operations for customizable store layout control and content management.",
+    techStack: ["Backend Architecture", "Payment Flows", "Webhook Security", "Inventory Logic", "Vercel"],
+    type: "System",
+    link: "https://maka-store.vercel.app/"
+  },
+  {
+    title: "Integrated Medical Platform (Sehaty)",
+    period: "Nov 2025 – Dec 2025",
+    description: "Engineered the backend for a comprehensive medical platform digitizing patient journeys (Booking, Labs, Home Services). Integrated Firebase Auth for secure authentication and Firestore for real-time data management. Incorporated online payments via Kashier and automated notifications using WhatsApp API. Orchestrated complex file workflows for prescriptions using Cloudinary and Airtable.",
+    techStack: ["Firebase", "Firestore", "Kashier Payment Gateway", "WhatsApp API", "Cloudinary"],
+    type: "System",
+    link: "https://sehaty-86se.vercel.app/"
+  },
+  {
+    title: "School Management System (API)",
+    period: "Sep 2024 – Nov 2024",
+    description: "Architected a comprehensive API for school administration using Clean Architecture and .NET Core. Enforced robust security measures using JWT authentication and role-based authorization.",
+    techStack: ["C#", ".NET Core", "SQL", "Entity Framework Core", "LINQ"],
+    type: "API",
+    link: "https://github.com/AhmedHazem02/school-management-system"
+  },
+  {
+    title: "Talabat E-commerce Clone (API)",
+    period: "Apr 2024 – Jun 2024",
+    description: "Engineered a high-performance backend system replicating core functionalities of a food delivery platform. Integrated Redis for caching frequently accessed data, significantly reducing database load.",
+    techStack: ["C#", ".NET Web API", "Redis", "SQL", "AutoMapper"],
+    type: "API",
+    link: "https://github.com/AhmedHazem02/e-commerce-website-API-Route-/tree/master"
+  },
+  {
+    title: "Employee Management System (MVC)",
+    period: "Feb 2024 – Mar 2024",
+    description: "Developed a full-stack MVC application for managing employees and departments. Implemented secure login/signup functionality and full CRUD operations with server-side validation using Clean Architecture principles.",
+    techStack: ["ASP.NET Core MVC", "SQL", "Entity Framework", "Bootstrap", "HTML/CSS"],
+    type: "MVC",
+    link: "https://github.com/AhmedHazem02/MVC_Project_Route/tree/master"
+  }
+];
+
+// ATS Rule: Education (Degrees only)
+export const EDUCATION: Experience[] = [
+  {
+    company: "Sohag University",
+    role: "Bachelor of Information Technology",
+    period: "Oct 2022 – Jun 2026 (Expected)",
+    type: "Education"
+  }
+];
+
+// ATS Rule: Separate Section for Certifications
+export const CERTIFICATIONS: Experience[] = [
+  {
+    company: "Route Academy",
+    role: "Back-End ASP.NET Certificate",
+    period: "Nov 2023 – Jun 2024",
+    type: "Certificate",
+    link: "https://drive.google.com/file/d/10OGnhBa2WcJwSV2iTr_PfdL0fjy9NbFr/view?pli=1"
+  },
+  {
+    company: "Egyptian Collegiate Programming Contest",
+    role: "ECPC Qualification Certificate",
+    period: "2024",
+    type: "Certificate",
+    link: "https://drive.google.com/file/d/1-0k0nKGk8Wh6n8bzaHv42KtWaOLdOxpU/view"
+  }
+];
+
+// ATS Rule: Volunteering / Achievements in separate or additional sections
+export const VOLUNTEERING: Experience[] = [
+  {
+    role: "Head of Back-End Committee",
+    company: "Smart Student Activity (Sohag University)",
+    period: "Apr 2024 – Jan 2025",
+    description: [
+      "Spearheaded technical training for junior students and designed curriculum for backend tracks."
+    ],
+    type: "Volunteering"
+  }
+];
+
+export const ACHIEVEMENTS: Experience[] = [
+  {
+    company: "Coach Academy",
+    role: "Competitive Programming Training Level 3",
+    period: "May 2023 – Feb 2024",
+    type: "Certificate",
+    link: "https://drive.google.com/file/d/1DYJZQgJAoz6sT8Vy0FZxsje-Cu3_Ohz9/view?pli=1"
+  }
+];
+
+export const LANGUAGES = [
+  { language: "Arabic", level: "Native" },
+  { language: "English", level: "Professional Proficiency" }
+];
+
+export const SKILLS: SkillCategory[] = [
+  {
+    name: "Languages",
+    skills: ["C#", "C++", "Python", "SQL"]
+  },
+  {
+    name: "Frameworks",
+    skills: [".NET Core", "ASP.NET Web API", "Entity Framework (EF)", "MVC", "LINQ"]
+  },
+  {
+    name: "Databases",
+    skills: ["MSSQL", "Redis", "Firestore"]
+  },
+  {
+    name: "Concepts",
+    skills: ["OOP", "Data Structures", "Algorithms", "SOLID Principles", "Clean Architecture", "CQRS", "Repository Pattern", "Dependency Injection"]
+  },
+  {
+    name: "Tools",
+    skills: ["Git", "GitHub", "Docker", "Postman", "Firebase"]
   }
 ];
 
@@ -84,122 +208,5 @@ export const SERVICES: Service[] = [
     description: "Applying advanced data structures and algorithms to solve complex logic challenges.",
     features: ["Data Structures", "Algorithms", "C++ & Python", "Performance Optimization"],
     icon: "Zap"
-  }
-];
-
-export const PROJECTS: Project[] = [
-  {
-    title: "MakaStore (E-Commerce Platform)",
-    period: "Xfuse | Live Production",
-    description: "A production-ready, Arabic-first (RTL) e-commerce platform built for the Arab market. As the Core Backend Owner, I architected the entire 'engine room': a resilient Order Management System and a secure Payment Infrastructure handling transactions, callbacks, and signature verification. I implemented atomic inventory locking, a dynamic Admin CMS for frontend layout control (Hero sections, sliders), and a comprehensive security layer for auditing and validation. The system currently powers live stores with high reliability.",
-    techStack: ["Web App", "Supabase", "System Design", "Payment Gateways", "Webhooks", "Security","CMS Logic","Vercal"],
-    type: "System",
-    link: "https://maka-store.vercel.app/"
-  },
-  {
-    title: "School System (API)",
-    period: "September 2024 - November 2024",
-    description: "A comprehensive school management API built with .NET Core to digitize administrative workflows. The system manages complex relationships between students, teachers, classes, and subjects. Key features include automated grade calculation, attendance tracking, and timetable generation. It is built using Clean Architecture to separate concerns, ensuring the code is testable and maintainable. Security is handled via JWT authentication with granular role-based access control (RBAC).",
-    techStack: ["C#", "OOP", "SQL", "Entity Framework", "LINQ", "API", "Design Patterns", "JWT", "Dependency Injection", "Token"],
-    type: "API",
-    link: "https://github.com/AhmedHazem02/school-management-system"
-  },
-  {
-    title: "Talabat (API)",
-    period: "April 2024 - June 2024",
-    description: "A high-performance e-commerce backend modeled after the Talabat food delivery platform. It orchestrates the entire order lifecycle: restaurant listing, menu management, cart manipulation, and order processing. To optimize performance, Redis is utilized for caching frequently accessed data (like menus). The system implements the Repository and Unit of Work patterns for efficient data access and uses JWT for secure user and vendor authentication.",
-    techStack: ["C#", "OOP", "SQL", "Entity Framework", "LINQ", "API", "Design Patterns", "JWT", "Dependency Injection", "Token", "Redis"],
-    type: "API",
-    link: "https://github.com/AhmedHazem02/e-commerce-website-API-Route-/tree/master"
-  },
-  {
-    title: "CRUD Operations (MVC)",
-    period: "February 2024 - March 2024",
-    description: "A full-stack ASP.NET Core MVC web application developed for corporate employee management. It provides a responsive, user-friendly interface for HR tasks, allowing for adding, editing, and removing employee and department records. The application includes a custom-built identity system for secure login/signup and uses robust server-side validation. Data interactions are optimized using LINQ queries against an MSSQL database.",
-    techStack: ["C#", "OOP", "SQL", "Entity Framework", "LINQ", "MVC", "Design Patterns", "HTML5", "CSS", "Bootstrap"],
-    type: "MVC",
-    link: "https://github.com/AhmedHazem02/MVC_Project_Route/tree/master"
-  },
-  {
-    title: "Ask_Me",
-    period: "January 2024 - February 2024",
-    description: "An anonymous Q&A social platform simulation similar to Ask.fm. The application allows users to register, post public or anonymous questions to other users, and reply to inquiries. It features a complex relational database design to handle user threads, messages, and privacy settings efficiently. The logic layer demonstrates strong command of C# collections and LINQ for filtering and sorting message feeds.",
-    techStack: ["C#", "OOP", "SQL", "Entity Framework", "LINQ"],
-    type: "Console",
-    link: "https://github.com/AhmedHazem02/Ask_Me/tree/master"
-  },
-  {
-    title: "ATM System",
-    period: "October 2023 - December 2023",
-    description: "A secure, console-based banking system simulation designed to practice advanced Object-Oriented Programming (OOP) concepts. It encapsulates bank account data and provides a menu-driven interface for secure transactions such as deposits, withdrawals, and balance inquiries. The system implements proper validation to prevent overdrafts and uses session management to simulate real-world ATM security flows.",
-    techStack: ["C#", "OOP"],
-    type: "Console",
-    link: "https://github.com/AhmedHazem02/ATM-Project/tree/master"
-  }
-];
-
-export const EDUCATION: Experience[] = [
-  {
-    company: "Sohag University",
-    role: "Bachelor of Information Technology",
-    period: "October 2022 - June 2026",
-    type: "Education"
-  },
-  {
-    company: "Route Academy",
-    role: "Back-End ASP.NET Certificate",
-    period: "November 2023 - June 2024",
-    type: "Certificate",
-    link: "https://drive.google.com/file/d/10OGnhBa2WcJwSV2iTr_PfdL0fjy9NbFr/view?pli=1"
-  },
-  {
-    company: "Coach Academy",
-    role: "Competitive Programming Training Level 3",
-    period: "May 2023 - February 2024",
-    type: "Certificate",
-    link: "https://drive.google.com/file/d/1DYJZQgJAoz6sT8Vy0FZxsje-Cu3_Ohz9/view?pli=1"
-  }
-];
-
-export const VOLUNTEERING: Experience[] = [
-  {
-    role: "Head of Back-End",
-    company: "Smart (Sohag University)",
-    period: "April 2024 – January 2025",
-    description: [
-      "Led back-end development sessions and mentoring initiatives.",
-      "Supported students in learning core back-end technologies and frameworks.",
-      "Provided guidance on project architecture, SQL database, and server-side logic."
-    ],
-    type: "Volunteering"
-  }
-];
-
-export const ACHIEVEMENTS: Experience[] = [
-  {
-    company: "ECPC",
-    role: "Qualifications Collegiate Programming Contest",
-    period: "2024",
-    type: "Certificate",
-    link: "https://drive.google.com/file/d/1-0k0nKGk8Wh6n8bzaHv42KtWaOLdOxpU/view"
-  }
-];
-
-export const SKILLS: SkillCategory[] = [
-  {
-    name: "Languages & Core",
-    skills: ["C#", "C++","JavaScript", "Python", "OOP", "Problem-solving", "Data Structures", "Algorithms"]
-  },
-  {
-    name: "Backend Technologies",
-    skills: ["Web API", "MVC", "Entity Framework", "LINQ", "Identity", "JWT", "Repo Pattern", "Clean Architecture", "CQRS"]
-  },
-  {
-    name: "Database & Infra",
-    skills: ["MSSQL", "SQL", "Redis", "Networking", "Git & Github"]
-  },
-  {
-    name: "Frontend Basics",
-    skills: ["HTML5", "CSS3", "Bootstrap"]
   }
 ];
