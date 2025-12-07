@@ -1,5 +1,5 @@
 
-import { Project, Experience, SkillCategory } from './types';
+import { Project, Experience, SkillCategory, Service } from './types';
 import { 
   Github, 
   Linkedin, 
@@ -10,7 +10,11 @@ import {
   Cpu, 
   Globe,
   Mail,
-  Phone
+  Phone,
+  Zap,
+  Shield,
+  Layout,
+  Workflow
 } from 'lucide-react';
 
 export const PERSONAL_INFO = {
@@ -41,6 +45,45 @@ export const WORK_EXPERIENCE: Experience[] = [
       "Collaborating with the team to deliver high-quality software solutions."
     ],
     type: "Work"
+  }
+];
+
+export const SERVICES: Service[] = [
+  {
+    title: ".NET Web API Development",
+    description: "Building robust, scalable RESTful APIs using ASP.NET Core and secure authentication methods.",
+    features: ["RESTful API Design", "JWT & Identity Security", "Dependency Injection", "Token Management"],
+    icon: "Server"
+  },
+  {
+    title: "System Architecture",
+    description: "Designing maintainable systems using modern architectural patterns and best practices.",
+    features: ["Clean Architecture", "CQRS Pattern", "Repository Pattern", "Design Patterns"],
+    icon: "Workflow"
+  },
+  {
+    title: "Database Engineering",
+    description: "Designing and optimizing relational databases for performance and data integrity.",
+    features: ["MSSQL Server", "Entity Framework Core", "LINQ Optimization", "Database Modeling"],
+    icon: "Database"
+  },
+  {
+    title: "MVC Web Applications",
+    description: "Developing full-stack web applications with server-side rendering and responsive UIs.",
+    features: ["ASP.NET Core MVC", "HTML5 & CSS3", "Bootstrap UI", "Server-Side Validation"],
+    icon: "Layout"
+  },
+  {
+    title: "Technical Mentorship",
+    description: "Leading development sessions and guiding students in backend technologies.",
+    features: ["Backend Roadmaps", "Project Architecture Guidance", "Code Reviews", "Tech Workshops"],
+    icon: "Cpu"
+  },
+  {
+    title: "Algorithmic Problem Solving",
+    description: "Applying advanced data structures and algorithms to solve complex logic challenges.",
+    features: ["Data Structures", "Algorithms", "C++ & Python", "Performance Optimization"],
+    icon: "Zap"
   }
 ];
 
